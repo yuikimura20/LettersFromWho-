@@ -1,0 +1,80 @@
+	
+
+	body {background-color: rosybrown; 
+		  color: rosybrown;
+		  font-family:"EB Garamond", serif;
+		  margin: 60px
+		  
+}
+
+	.grow-image {
+			display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	}
+	.grow-image img:hover {
+    transform: scale(1.2); /* grows by 20% on hover */
+    cursor: pointer;
+}
+
+	h1 {font-size: 60px}
+
+	img#myImage {
+  width: 150px;
+   display: block;
+  margin: 0 auto; /* horizontally center block elements */
+  padding: 30px;
+  
+}
+
+	a {color: rosybrown;
+		font-size: 30px}
+
+	#secondparagraph {color: rosybrown;}
+
+
+	.container {background-color: beige;
+		width: 1000px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 30px;
+
+	}
+
+	.container img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+	  
+
+.container2 {
+  display: flex;
+  gap: 20px; /* space between the two boxes */
+}
+
+.box {
+  flex: 1; /* both boxes take equal width */
+  width: 600;
+  padding: 1rem;
+  background-color: beige;
+  border: 1px solid #BB8588;
+  height:350px;
+}
+
+.left {
+  background-color: beige;
+  font-size: 19px;
+}
+
+.right {
+  background-color: beige;
+  font-size: 17px;
+}
+
+.paragraphlast {
+	color: beige;
+	font-size: 15px;
+	text-align: center;
+}
