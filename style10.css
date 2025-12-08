@@ -1,0 +1,149 @@
+
+
+
+  
+
+  body {background-color: #9d9264; 
+      color: rosybrown;
+      font-family:"EB Garamond", serif;
+      margin: 60px
+      
+}
+
+
+
+
+.grow-image {
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  }
+  .grow-image img:hover {
+    transform: scale(1.2); /* grows by 20% on hover */
+    cursor: pointer;
+}
+
+
+
+
+
+h1 {
+    font-family:  "Shizuru", system-ui;
+  color: #9d9264;
+  font-size: 50px;
+
+}
+
+#tag {
+  width: 100px;
+  /*THERE IS POSITION, ABSOLUTE, RELATIVE, FIXED, STICKY*/
+  position: fixed;
+  top: 50px;
+  left: 60px;
+  opacity: 90%;
+}
+  
+
+#love {
+  width: 200px;
+  /*THERE IS POSITION, ABSOLUTE, RELATIVE, FIXED, STICKY*/
+  position: fixed;
+  top: 500px;
+  left: 600px;
+  opacity: 80%;
+}
+
+
+.text-box {
+  position: absolute;        /* allows it to sit on top of the stripes */
+  top: 400px;                /* move box down */
+  left: 50%;                 /* center horizontally */
+  transform: translateX(-50%);
+
+  width: 60%;                /* size of the box */
+  height: 500px;
+  padding: 20px 30px;
+
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent white box */
+  border: 2px solid #9d9264;            /* optional border */
+  border-radius: 0px;                  /* rounded corners */
+
+  font-family: "Reenie Beanie", cursive;
+  font-size: 40px;
+  color: #9d9264;
+  z-index: 20;               /* keeps it above the stripes */
+
+   text-align: center;   /* <-- centers all the text inside */
+
+
+}
+
+
+
+#paragraph1 {
+  font-family: "EB Garamond", serif;
+  color: #9d9264;
+  font-size: 20px;
+}
+
+#paragraph2 {
+  font-family: "EB Garamond", serif;
+  color: #9d9264;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.topmost-image {
+  position: fixed;   /* stays above everything, even when scrolling */
+  top: 400px;         /* move image down */
+  left: 100px;        /* move image right */
+  width: 150px;      /* adjust size as needed */
+
+  z-index: 9999;     /* VERY high layer so nothing covers it */
+  pointer-events: none; /* optional: lets you click through it */
+}
+
+/* Container that floats above everything */
+.emoji-container {
+  position: fixed;      /* stays on top even when scrolling */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* lets you click through it */
+  z-index: 9999;        /* ensures it’s above everything */
+  overflow: hidden;     /* hide emojis once they fall off screen */
+}
+
+/* Emoji style and animation */
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  top: -50px;           /* start above the screen */
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh); /* fall past the bottom */
+    opacity: 0.7;
+  }
+}
