@@ -1,0 +1,155 @@
+
+body {
+	background-color: #E6D7EB;
+
+
+
+font-family: "Hiragino Mincho Pro";
+font-size: 15px;
+font-style: normal;
+line-height: normal;
+display: flex;
+		  justify-content: center;
+}
+
+
+	.grow-image {
+			display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	}
+	.grow-image img:hover {
+    transform: scale(1.2); /* grows by 20% on hover */
+    cursor: pointer;
+}
+
+
+
+
+#photobooth {
+	width: 1000px;
+	/*THERE IS POSITION, ABSOLUTE, RELATIVE, FIXED, STICKY*/
+	position: fixed;
+	top: 250px;
+	left: 5px;
+	opacity: 70%;
+}
+
+#forsahya {
+	width: 1000px;
+}
+
+
+
+
+
+
+
+#LetterD {
+	font-family:  "Shizuru", system-ui;
+	color: #4D3155;
+	font-size: 130px;
+	animation: FadeIn 2s infinite;
+} 
+
+
+@keyframes FadeIn {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+
+}
+
+#LetterE {
+	font-family:  "Shizuru", system-ui;
+	color: #4D3155;
+	font-size: 160px;
+	animation: FadeIn 2s infinite;
+} 
+
+
+@keyframes FadeIn {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+
+}
+
+#LetterF {
+	font-family:  "Shizuru", system-ui;
+	color: #4D3155;
+	font-size: 130px;
+	animation: FadeIn 2s infinite;
+} 
+
+
+@keyframes FadeIn {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+
+}
+
+
+
+
+
+
+h2 {
+	font-family: "Hiragino Mincho Pro" ;
+	color: #4D3155;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+h3 {font-family: "Shizuru", system-ui;
+	color: #4D3155;
+	font-size: 70px;
+	text-align: center;
+
+}
+
+
+
+#paragraph1 {
+	background-color: #E6D7EB;
+	font-family: "Hiragino Mincho Pro";
+	color: #4D3155;
+}
+
+#paragraph2 {
+	background-color: #E6D7EB;
+	font-family: "Hiragino Mincho Pro";
+	color: #4D3155;
+}
+
+.container {background-color: #E6D7EB;
+		width: 500px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 30px}
+
+
+
+img#herImage {
+  width: 600px;
+   display: block;
+  margin: 0 auto; /* horizontally center block elements */
+  padding: 30px;
+  
+}
+
+
+
+
+	img#myImage {
+  width: 150px;
+   display: block;
+  margin: 0 auto; /* horizontally center block elements */
+  padding: 30px;
+  
+}
+
