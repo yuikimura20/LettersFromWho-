@@ -1,0 +1,52 @@
+	
+
+	body {background-color: #abc9d6; 
+		  color: #3c5f6e;
+		  margin: 60px
+		  display: flex;
+		  justify-content: center;}
+
+
+
+
+
+
+
+
+.grow-image {
+			display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	}
+	.grow-image img:hover {
+    transform: scale(1.2); /* grows by 20% on hover */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+	h1 {font-size: 60px;
+font-family:  "Shizuru", system-ui;
+	}
+
+	a {color: #3c5f6e;}
+
+	#secondparagraph {color: #3c5f6e;}
+
+
+
+
+
+
+		.container {background-color: beige;
+		width: 600px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 30px;
+
+	}
