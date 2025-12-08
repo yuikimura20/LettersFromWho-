@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Letters From Who Intro</title>
+	<link rel="stylesheet" type="text/css" href="entry_8.css">
+	
+	<!-- THIS IS FOR GOOGLE FONTS  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Script&family=Shizuru&display=swap" rel="stylesheet">
+	
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=League+Script&family=Shizuru&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+
+<a href="file:///Users/yuikimura/Desktop/Core%20Interaction/untitled%20folder/homepage.html" target="_blank" class="grow-image">
+    <img src="Images/IMG_2622.PNG" width="300"alt="Hover to grow">
+</a>
+
+
+<h1>Letters From Who</h1>
+<br>
+<br>
+
+<h2> another brief stop</h>
+<h3><i> where is this letter going to....? Anyways, I think you might've had a bore from going on a trip down the memory lane with me so I'll leave this here. 
+	</i></h3>
+
+
+
+
+<div class="container">
+    <img id="follow-img" src="Images/Untitled-2.png" alt="Image">
+</div>
+
+<script>
+const img = document.getElementById("follow-img");
+const container = document.querySelector(".container");
+
+container.addEventListener("mousemove", (e) => {
+    const rect = container.getBoundingClientRect();
+    
+    // Get mouse position inside container
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    // Move image to follow cursor
+    img.style.transform = `translate(${x}px, ${y}px)`;
+});
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: #AC7663;
+
+font-family: "Hiragino Mincho Pro";
+font-size: 15px;
+font-style: normal;
+line-height: normal;
+display: flex;
+		  justify-content: center;
+margin-bottom: 60px;
+}
+
+
+.grow-image {
+			display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	}
+	.grow-image img:hover {
+    transform: scale(1.2); /* grows by 20% on hover */
+    cursor: pointer;
+}
+
+
+
+h1 {
+	font-family: "Shizuru", system-ui;
+	color: #F0DFCC;
+	font-size: 120px;
+	text-align: center;
+	letter-spacing: -8px;
+    line-height: 160px;
+    margin-bottom: 0px;
+}
+
+
+
+h1:hover {
+	color: #F0DFCC;
+	font-size: 130px;
+	font-family: "League Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+	color:#F0DFCC;
+	font size: 20px;
+	font-family: "EB Garamond", serif;
+	font font-weight: 400;
+}
+
+h3 {
+	color:#F0DFCC;
+	font size: 20px;
+	font-family: "EB Garamond", serif;
+	font font-weight: 400;
+}
+
+
+
+
+#para {	color:#F0DFCC;
+	font size: 50px;
+	font-family: "EB Garamond", serif;
+	font font-weight: 400;
+
+}
+
+#paragraph1 {
+	color:#F0DFCC;
+	font size: 10px;
+	font-family: "EB Garamond", serif;
+	font font-weight: 400;
+
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 400px;   /* any size you want */
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+#follow-img {
+    position: absolute;
+    width: 150px;
+    pointer-events: none; /* allows hover area to detect mouse */
+    transition: transform 0.1s linear;
+}
