@@ -1,0 +1,61 @@
+	body {background-color: #E0DECD;
+	display: flex;
+		  justify-content: center; }
+
+
+	img {
+		width: 500px;
+	}
+
+
+	.slideshow {
+  position: absolute;
+  width: 50%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 70;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
+
+.moving-text {
+  position: absolute;
+  top: 50%;
+  white-space: nowrap;
+  font-size: 5rem;
+  color: #4D3155;
+  animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+h1 {
+	font-family: "League Script", cursive;
+	font-size: 400px;
+	color: #8690A2;
+}

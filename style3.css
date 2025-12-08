@@ -1,0 +1,62 @@
+
+
+	body {background-color: #8690A2; 
+		  color: #E0DECD;
+
+font-family: "Hiragino Mincho Pro";
+font-size: 15px;
+font-style: normal;
+line-height: normal;
+display: flex;
+		  justify-content: center;}
+
+
+
+.grow-image {
+			display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	}
+	.grow-image img:hover {
+    transform: scale(1.2); /* grows by 20% on hover */
+    cursor: pointer;
+}
+
+
+
+#LetterC {
+	font-family: "League Script", cursive;
+	font-size: 80px;
+	animation: bounce 1s infinite;
+	padding-top: 70px;
+}
+
+
+@keyframes bounce {
+
+	0% {transform: translateY(0px);}
+	50% {transform: translateY(-50px);}
+	100% {transform: translateY(0px);}
+
+}
+
+	a {color: #E0DECD;
+	}
+
+	#secondparagraph {color: #E0DECD;}
+
+.container {background-color: #8690A2;
+		width: 650px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 30px}
+
+img#myImage {
+  width: 150px;
+   display: block;
+  margin: 0 auto; /* horizontally center block elements */
+  padding: 30px;
+  
+}
