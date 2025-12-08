@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Entry9</title>
+	<link rel="stylesheet" type="text/css" href="entry_9.css">
+	<!-- THIS IS FOR GOOGLE FONTS  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Script&family=Shizuru&display=swap" rel="stylesheet">
+	
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=League+Script&family=Petit+Formal+Script&family=Quicksand:wght@300..700&family=Reenie+Beanie&family=Shizuru&display=swap" rel="stylesheet">
+
+<!-- THIS IS FOR Java Script Style  -->
+
+<style>
+  #typewriter {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 40px;
+    white-space: pre-wrap;
+    color: #7faeb0;
+  }
+
+
+
+ 
+</style>
+</head>
+
+
+
+<body>
+<div class="container">
+
+<h2><i>Dear You,</i></h2>
+
+<img src="Images/Untitled_Artwork 12.png" id="heartletters">
+<img src="Images/Untitled_Artwork 12 copy 2.png" id="paperairplane">
+
+ <div id="typewriter"></div><span id="cursor">|</span>
+
+  <script>
+    const text = `
+    Dear to whoever has written me a letter. I hope you are doing well. I feel as if although I receive so many letters from so many people and reread them until the paper crumbles, I am quite terrible at writing back. I never know what to write. Words that have been written in letters have impacted me in ways no other medias ever have. I don't think I can do the same. I wish i could write something half as profound and half as emotional. But instead I am spitting out words that will probably get lost sooner or later. But I just wanted to say, thank you for the letter. I love you more than words can describe. You have made me both laugh and cry. Not just from the letter but in person. Your written words are constant reminders that i will be okay. Even if we are far apart, we are connected. With pieces of paper and scribbled words.
+
+
+
+   `;
+
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        document.getElementById("typewriter").textContent += text[index];
+
+        // Check if the character is a sentence-ending punctuation
+        const char = text[index];
+        const isSentenceEnd = char === "." || char === "!" || char === "?";
+
+        index++;
+
+        // Normal typing speed
+        let delay = 90;
+
+        // Add pause after sentences
+        if (isSentenceEnd) {
+          delay = 400; // pause for 0.4s after a sentence
+        }
+
+        setTimeout(type, delay);
+      }
+    }
+
+    type();
+  </script>
+
+</div>
+
+
+</body>
+</html>
