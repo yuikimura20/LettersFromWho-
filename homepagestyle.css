@@ -1,0 +1,47 @@
+body {
+	background-color: #BB8588;
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
+display: flex;
+		  justify-content: center;
+margin-bottom: 60px;
+
+}
+
+
+
+
+.grow-image img {
+    width: 300px;          /* starting size */
+    transition: transform 0.3s ease;  /* smooth animation */
+}
+
+.grow-image img:hover {
+    transform: scale(1.2); /* grows by 20% on hover */
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text {
+  font-style: "EB Garamond", serif;;
+  color: #FAE9C5;
+  position: absolute;
+  bottom: 90px;
+  left: 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .hover-text {
+  opacity: 1;
+}
