@@ -41,5 +41,18 @@ font-family:  "Shizuru", system-ui;
 
 
 
+#cd {
+    width: 600px;
+    animation: spin 0.5s linear infinite;
+    animation-play-state: paused;
+    cursor: pointer;
+}
 
+#cd.active {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg);}
+}
 
