@@ -38,21 +38,13 @@ font-family:  "Shizuru", system-ui;
 
 	#secondparagraph {color: #3c5f6e;}
 
+		.container {background-color: #BAC9CC;
+		width: 600px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 30px;
+
+	}
 
 
-
-#cd {
-    width: 600px;
-    animation: spin 0.5s linear infinite;
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-#cd.active {
-    animation-play-state: running;
-}
-
-@keyframes spin {
-    to { transform: rotate(360deg);}
-}
 
