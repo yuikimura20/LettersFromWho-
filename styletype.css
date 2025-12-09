@@ -52,7 +52,7 @@ display: flex;
 .fade-text {
 		color: #751414;
 	font-size: 85px;
-	font-family: "League Script", cursive;
+	font-family: "Shizuru", system-ui;
     opacity: 0;
     transition: opacity 1.5s ease; /* controls fade speed */
     cursor: pointer;
