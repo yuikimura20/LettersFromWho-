@@ -108,7 +108,28 @@
 <div class="container2">
 
 
+<div class="emoji-container">
+  <span class="emoji">✧｡</span>
+  <span class="emoji">◌𓈒𓐍</span>
+  <span class="emoji">✐</span>
+  <span class="emoji">.*･｡ﾟ</span>
+  <span class="emoji">✐</span>
+  <span class="emoji">✧｡</span>
+  <span class="emoji">◌𓈒𓐍</span>
+</div>
+   
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const emojis = document.querySelectorAll('.emoji');
+
+  emojis.forEach(emoji => {
+    emoji.style.left = Math.random() * 100 + 'vw';
+    emoji.style.animationDuration = (Math.random() * 5 + 5) + 's';
+    emoji.style.fontSize = (Math.random() * 2 + 1) + 'rem';
+  });
+});
+</script>
 
 
 
