@@ -46,25 +46,24 @@ display: flex;
 
 
 
-h1 {
-	font-family: "Hiragino Mincho Pro";
-	color: #751414;
-	font-size: 80px;
-	text-align: center;
-	letter-spacing: -8px;
-    line-height: 160px;
-    margin-bottom: 0px;
-}
 
 
 
-h1:hover {
-	color: #751414;
+.fade-text {
+		color: #751414;
 	font-size: 85px;
 	font-family: "League Script", cursive;
-    font-weight: 400;
-    font-style: normal;
+    opacity: 0;
+    transition: opacity 1.5s ease; /* controls fade speed */
+    cursor: pointer;
 }
+
+.fade-text.show {
+    opacity: 1;
+}
+
+
+
 
 
 h2 {
