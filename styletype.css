@@ -51,7 +51,7 @@ display: flex;
 
 .fade-text {
 		color: #751414;
-	font-size: 85px;
+	font-size: 80px;
 	font-family: "Shizuru", system-ui;
     opacity: 0;
     transition: opacity 1.5s ease; /* controls fade speed */
