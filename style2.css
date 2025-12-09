@@ -46,5 +46,20 @@ font-family:  "Shizuru", system-ui;
 
 	}
 
+#LetterC {
+	font-family: "League Script", cursive;
+	font-size: 80px;
+	animation: bounce 1s infinite;
+	padding-top: 70px;
+}
+
+
+@keyframes bounce {
+
+	0% {transform: translateY(0px);}
+	50% {transform: translateY(-50px);}
+	100% {transform: translateY(0px);}
+
+}
 
 
